@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Необязательное задание.
+
+Необходимо реализовать функцию, которая будет принимать первым аргументом
+целое положительное число, в следующих трех аргументах функция принимает слова
+в разных склонениях.
+Функция должна возвращать одно из трех переданных в параметры слов подходящее
+под число, которое передано первым аргументом.
+
+Пример:
+console.log(declinationOfNumber(1, "яблоко", "яблока", "яблок")); // "яблоко"
+console.log(declinationOfNumber(2, "мяч", "мяча", "мячей")); // "мяча"
+console.log(declinationOfNumber(5, "стул", "стула", "стульев")); // "стульев"
+
+Функция должна работать с любым словом и любым целым положительным числом.
+Все аргументы, которые будут передаваться функции будут верны.
+-->
+  <script>
+    "use strict";
+
+    let a = +prompt(`Введите число a `);
+    if (a < 0) {
+      a = -a;
+    }
+    let wordone = prompt(`Введите имя существительное в единственом числе`),
+      words = prompt(`Введите имя существительное в супплетивной форме например два стула`),
+      wordm = prompt(`Введите имя существительное во множественом числе`);
+
+    wordone = String(wordone);
+    words = String(words);
+    wordm = String(wordm);
+    let word;
+
+    console.log(declinationOfNumber(1, "яблоко", "яблока", "яблок")); // "яблоко"
+    console.log(declinationOfNumber(2, "мяч", "мяча", "мячей")); // "мяча"
+    console.log(declinationOfNumber(5, "стул", "стула", "стульев")); // "стульев"
+    alert(`Для проверки ${a} ${declinationOfNumber(a, wordone, words, wordm)}`)
+    console.log("Для проверки " + a + "Для проверки " + declinationOfNumber(a, "яблоко", "яблока", "яблок"));
+
+    function declinationOfNumber(arg1, word1, word2, word3) {
+
+      if (arg1 === 1) {
+        word = word1;
+        return word;
+      } else if ((arg1 !== 1) && (arg1 < 5) && (arg1 !== 5)) {
+        word = word2;
+        return word;
+      } else if (((arg1 !== 2) && (arg1 !== 1)) || (arg1 <= 5)) {
+        word = word3;
+        return word;
+      }
+    }
+  </script>
+</body>
+
+</html>
