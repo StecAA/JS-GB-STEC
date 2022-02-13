@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+        <header class="header">
+                <div class="container__wrp">
+                        <div class="header__wrp">
+                                <div class="header__wrp-logo">
+                                        <a class="header__logo" href="./index.html" target="_blank"><img
+                                                        src="./image/header1.svg" alt="logo"></a>
+                                        <a class="header__search" href="#"><img src="./image/header2.svg"
+                                                        alt="search"></a>
+                                </div>
+                                <div class="header__list-basket">
+                                        <button id="burger" class="header__list"> <img src="./image/header3.svg"
+                                                        alt="list"></button>
+                                        <a class="header__mypage" href="#"><img src="./image/header4.svg"
+                                                        alt="mypage"></a>
+                                        <a class="header__basket" href="./cart.html"><img src="./image/header5.svg"
+                                                        alt="basket"></a>
+                                </div>
+                        </div>
+                </div>
+                <section class="crumbs-product">
+                        <h1 class="crumbs-product__title red">new arrivals</h1>
+                        <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a class="breadcrumb-item__wrp" href="#">HOME</a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a class="breadcrumb-item__wrp" href="#">MEN</a>
+                                        </li>
+                                        <li class="breadcrumb-item active red" aria-current="page">NEW ARRIVALS</li>
+                                </ol>
+                        </nav>
+                </section>
+        </header>
+        <main>
+                <section class="product">
+                        <h2 class="product__hide">
+                                Product
+                        </h2>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                                <img src="./image/women-product.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="./image/formen.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="./image/forwomen.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <i class="fas fa-arrow-alt-circle-left"></i>
+                                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Следующий</span>
+                        </button>
+                </section>
+                <div class="product__text">
+                        <p class="product__text-red red">women collection</p>
+                        <p class="product__text-content">moschino cheap and chic</p>
+                        <p class="product__text-content-list"> Compellingly actualize fully researched processes before
+                                proactive outsourcing. Progressively syndicate collaborative architectures before
+                                cutting-edge services. Completely visualize parallel core competencies rather than
+                                exceptional portals. </p>
+                        <p class="product__text-price red">$561</p>
+                        <br>
+                        <div class="wrp-product">
+                                <div class="row wrp-row product_row">
+                                        <select class="form-select form-select-sm col"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>choose color</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                        </select>
+                                        <select class="form-select form-select-sm col"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>choose size</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                        </select>
+
+                                        <select class="form-select form-select-sm col"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>quantity</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <button type="button" class="btn btn-danger"><img class="add_cart-img" src="./image/vector.svg"
+                                        alt="basket">Add to Cart</button>
+                </div>
+
+
+                <div class="container white margin-top">
+
+                        <div class="row">
+                                <div class="col-3">
+
+                                        <div class="">
+                                                <img class="col-3-img" src="./image/intem-1.png" alt="intem-1.png">
+                                                <button class="list-intem__tiny-button"><img src="./image/vector.svg"
+                                                                alt="basket">Add to
+                                                        Cart</button>
+                                        </div>
+                                        <h3 class="">ellery x m'o capsule</h3>
+                                        <p class="">known for her sculptural takes on traditional
+                                                tailoring,
+                                                australian arbiter of cool kym ellery teams up with moda operandi.
+                                        </p>
+                                        <p class="">$52.00</p>
+                                </div>
+                                <div class="col-3">
+
+                                        <div class="">
+                                                <img class="col-3-img" src=" ./image/intem-2.png" alt="">
+                                        </div>
+                                        <h3 class="">ellery x m'o capsule</h3>
+                                        <p class="">known for her sculptural takes on traditional
+                                                tailoring,
+                                                australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                                        <p class="">$52.00</p>
+                                </div>
+                                <div class="col-3 none">
+                                        <div class="">
+                                                <img class="col-3-img" src="./image/intem-3.png" alt="">
+                                        </div>
+                                        <h3 class="">ellery x m'o capsule</h3>
+                                        <p class="">known for her sculptural takes on traditional
+                                                tailoring,
+                                                australian arbiter of cool kym ellery teams up with moda operandi.
+                                        </p>
+                                        <p class="">$52.00</p>
+                                </div>
+                        </div>
+                </div>
+
+
+                <section>
+                        <h2 class="product__hide">1</h2>
+                        <ul class="">
+                                <li class="">
+
+                                </li>
+                                <li class="">
+
+                                </li>
+                                <li class="">
+
+                                </li>
+                        </ul>
+                </section>
+        </main>
+        <footer class="footer">
+                <section class="footer__content">
+                        <div class="footer__content-title">
+                                <img class="footer__content-img" src="./image/intersect.png" alt="face">
+                                <p class="footer__content-img-text">“vestibulum quis porttitor dui! quisque viverra
+                                        nunc
+                                        mi, a
+                                        pulvinar
+                                        purus
+                                        condimentum“</p>
+                        </div>
+                        <div class="footer__content-form">
+                                <h2 class="footer__content-slogan">subscribe </h2>
+                                <p class="footer__content-text">for our newletter and promotion</p>
+                                <div class="footer__content-button">
+                                        <input class="footer__email" type="email" value="Enter Your Email">
+                                        <input class="footer__button" type="submit" value="Subscribe">
+                                </div>
+                        </div>
+                </section>
+                <section class="footer__link">
+                        <p class="footer__link-text">© 2021 brand all rights reserved.</p>
+                        <h2 class="footer__link-hid">footer</h2>
+                        <ul class="footer__holder">
+                                <li><a class="footer__holder-facebook" href="#">
+                                                <img src="./image/footer1.svg" alt="facebook">
+                                        </a></li>
+                                <li><a class="footer__holder-instagram" href="#">
+                                                <img src="./image/footer2.svg" alt="instagram">
+                                        </a></li>
+                                <li><a class="footer__holder-p" href="#">
+                                                <img src="./image/footer3.svg" alt="p">
+                                        </a></li>
+                                <li><a class="footer__holder-twiter" href="#">
+                                                <img src="./image/footer4.svg" alt="twiter">
+                                        </a></li>
+                        </ul>
+                </section>
+        </footer>
+        <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+.section-intem__caption {
+        display: flex;
+        justify-content: center;
+        @include font(normal, 30px, 36px);
+}
+
+.section-intem__sab-caption {
+        @include flex-center;
+        @include font(normal, 14px, 17px);
+        color: #9F9F9F;
+
+        @include media(320px, 767px) {
+                width: 80%;
+                @include flex-center;
+                margin: auto;
+                text-align: center;
+        }
+}
+
+.section-content-item__box {
+        display: flex;
+        justify-content: space-around;
+
+        @include media(320px, 767px) {
+                flex-direction: column;
+                margin: auto;
+        }
+}
+
+.section-content-item {
+        margin-top: 59px;
+}
+
+
+.section-content-item__men {
+        @include flex-center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        width: 360px;
+        height: 260px;
+        width: 30%;
+        background-image: url(../image/formen.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include media(1024px, 2000px) {
+                height: 30vh;
+                width: 30vw;
+        }
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+        }
+}
+
+.section-content-item__women {
+        @include flex-center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        width: 360px;
+        height: 260px;
+        width: 30%;
+        background-image: url(../image/forwomen.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include media(1024px, 2000px) {
+                height: 30vh;
+                width: 30vw;
+        }
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+                margin-bottom: 32px;
+        }
+}
+
+.section-content-item__kids {
+        @include flex-center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        width: 30%;
+        height: 260px;
+        background-image: url(../image/forkids.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include media(1024px, 2000px) {
+                height: 30vh;
+                width: 30vw;
+        }
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+                margin-top: 32px;
+        }
+}
+
+.section-content-item__accessories {
+        @include flex-center;
+        margin-top: 30px;
+        align-items: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        height: 160px;
+        background-image: url(../image/accessories.jpg);
+        background-position: center;
+        background-size: 97%;
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+                margin-top: 32px;
+                background-size: 97% 76%;
+                background-image: url(../image/minaccessories.png);
+        }
+}
+
+.section-content-item__hid {
+        display: none;
+}
+
+
+
+.section-content-item__text-red {
+        @include font(normal, 29px, 29px);
+        color: $textred;
+        text-transform: uppercase;
+}
+
+.section-content-item__text {
+        @include font(normal, 16px, 19px);
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+}
+
+.list-intem {
+        display: flex;
+        margin-top: 48px;
+        justify-content: space-around;
+
+        @include media(768px, 1023px) {
+                flex-direction: column;
+                margin-top: 18px;
+        }
+
+        @include media(320px, 767px) {
+                flex-direction: column;
+        }
+}
+
+.section-intem-wrp {
+        @include media(768px, 1023px) {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+        }
+
+        @include media(320px, 767px) {
+                display: flex;
+                flex-direction: column;
+        }
+}
+
+
+.list-intem-second {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+
+        @include media(768px, 1023px) {
+                flex-direction: column;
+                margin-top: 18px;
+        }
+
+        @include media(320px, 767px) {
+                flex-direction: column;
+        }
+}
+
+.section-intem {
+        margin-top: 96px;
+}
+
+.list-intem__tiny {
+        width: 30%;
+        background: #F8F8F8;
+
+        @include media(768px, 1023px) {
+                width: 80%;
+                margin-top: 18px;
+                margin: auto;
+        }
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+        }
+}
+
+.list-intem-second__tiny {
+        width: 30%;
+        background: #F8F8F8;
+
+        @include media(768px, 1023px) {
+                width: 80%;
+                margin-top: 18px;
+                margin: auto;
+        }
+
+        @include media(320px, 767px) {
+                width: 96%;
+                margin: auto;
+        }
+}
+
+.caption {
+        @include flex-center;
+        @include font(normal, 30px, 36px);
+}
+
+.sab-caption {
+        @include flex-center;
+        @include font(normal, 14px, 17px);
+        color: #9F9F9F;
+
+}
+
+.list-intem-second__tiny-paragraph,
+.list-intem__tiny-paragraph {
+        margin-top: 26px;
+        margin-left: 18px;
+        @include font(600, 13px, 16px);
+        text-transform: uppercase;
+}
+
+.list-intem__tiny-grey {
+        margin-left: 18px;
+        margin-top: 13px;
+        @include font(300, 14px, 17px);
+        color: #5D5D5D;
+}
+
+.list-intem__tiny-red {
+        margin-left: 18px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        @include font(normal, 16px, 19px);
+        color: $textred;
+}
+
+.list-intem-second__tiny-grey {
+        margin-left: 18px;
+        margin-top: 13px;
+        @include font(300, 14px, 17px);
+        color: #5D5D5D;
+}
+
+.list-intem-second__tiny-red {
+        margin-left: 18px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        @include font(normal, 16px, 19px);
+        color: $textred;
+}
+
+
+.button-red {
+        display: flex;
+        width: 27%;
+        text-decoration: none;
+        margin: 49px auto 96px;
+        @include font(normal, 16px, 19px);
+        color: $textred;
+        border: 1px solid $textred;
+
+        @include media(768px, 1023px) {
+                margin-top: 32px;
+                margin-bottom: 65px;
+        }
+
+        @include media(320px, 767px) {
+                width: 211px;
+                height: 47px;
+                margin: 41px auto 96px;
+        }
+}
+
+.button-red__text {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 39px;
+        padding-right: 39px;
+        margin: 0 auto;
+
+        @include media(768px, 1023px) {
+                @include flex-center;
+                margin: auto;
+        }
+
+        @include media(320px, 767px) {
+                @include flex-center;
+                margin: auto;
+        }
+}
+
+.advantages {
+        width: 100%;
+        height: 341px;
+        background: #222224;
+
+        @include media(768px, 1023px) {
+                height: 610px;
+        }
+
+        @include media(320px, 767px) {
+                height: 610px;
+        }
+}
+
+.advantages__list {
+        display: flex;
+
+
+        @include media(768px, 1023px) {
+                flex-direction: column;
+                height: 610px;
+        }
+
+        @include media(320px, 767px) {
+                flex-direction: column;
+                height: 610px;
+        }
+
+
+}
+
+.advantages__box {
+        margin-top: 103px;
+        flex-direction: column;
+        @include flex-center;
+
+        @include media(768px, 1023px) {
+                width: 42%;
+                margin: auto;
+        }
+
+        @include media(320px, 767px) {
+                margin-top: 46px;
+
+        }
+
+}
+
+.advantages__box-white {
+        @include font(normal, 19.96px, 24px);
+        margin-top: 25px;
+        @include flex-center;
+        color: $white;
+}
+
+.advantages__list-box {
+        @include font(300, 13.972px, 17px);
+        text-align: center;
+        margin-top: 16px;
+        margin-left: 30px;
+        color: #FBFBFB;
+        opacity: 0.5;
+
+        @include media(768px, 1023px) {
+                margin-left: 0px;
+        }
+
+        @include media(320px, 767px) {
+                margin-left: 0px;
+        }
+}
+
+.advantages__box :hover,
+.button-red:hover {
+        background: #a6f53e;
+        background-size: 100%;
+        opacity: 0.4;
+}
+
+.advantages__box :active,
+.button-red:active {
+        background: #F16D7F;
+        background-size: 100%;
+        opacity: 0.9;
+}
+
+.list-intem-second__tiny-button,
+.list-intem__tiny-button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 138px;
+        height: 43px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        border: 1px solid $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -25%);
+        background: rgba(0, 0, 0, 0.2);
+        display: none;
+}
+
+.list-intem-second__tiny-overlay,
+.list-intem__tiny-overlay {
+        position: relative;
+        width: 100%;
+}
+
+.list-intem-second__tiny-overlay::before,
+.list-intem__tiny-overlay::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+        display: none;
+}
+
+.list-intem-second-img,
+.list-intem__tiny-img {
+        width: 100%;
+}
+
+.list-intem-second__tiny:hover .list-intem-second__tiny-overlay::before,
+.list-intem-second__tiny:hover .list-intem-second__tiny-button,
+.list-intem__tiny:hover .list-intem__tiny-button,
+.list-intem__tiny:hover .list-intem__tiny-overlay::before {
+        display: block;
+}
