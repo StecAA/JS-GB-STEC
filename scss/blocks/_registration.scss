@@ -1,0 +1,149 @@
+.registration {
+        width: 100%;
+        height: 675px;
+
+        @include media(320px, 767px) {
+                height: 150vh;
+        }
+}
+
+.registration__wrp {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(320px, 767px) {
+                flex-direction: column;
+        }
+}
+
+.registration__form {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        width: 19%;
+        margin-left: 230px;
+
+        &-text {
+                margin-top: 15px;
+                @include font(300, 13px, 16px);
+                color: #B1B1B1;
+        }
+
+        &-content {
+                margin-top: 33px;
+                @include font(300, 16px, 19px);
+        }
+
+        @include media(768px, 1023px) {
+                margin-left: 16px;
+                width: 48%;
+        }
+
+        @include media(320px, 767px) {
+                margin-left: 8px;
+                width: 95%;
+        }
+
+}
+
+registration__form-content-first {
+        margin-top: 0px;
+}
+
+.registration__text {
+        margin-top: 64px;
+        width: 42%;
+
+        @include media(768px, 1023px) {
+                @include font(300, 14px, 19px);
+        }
+
+        @include media(320px, 767px) {
+                margin-left: 9px;
+                margin-top: 40px;
+                margin-bottom: 100px;
+                width: 95%;
+                @include font(300, 14px, 19px);
+        }
+}
+
+.registration__list {
+        display: flex;
+
+}
+
+.registration__list-text {
+        @include font(normal, 24px, 29px);
+        margin-left: 23px;
+}
+
+.registration__title {
+        @include font(normal, 24px, 29px);
+        text-transform: uppercase;
+}
+
+.registration__subtitle {
+        margin-top: 22px;
+        @include font(normal, 24px, 29px);
+}
+
+.registration__items {
+        margin-top: 21px;
+}
+
+.registration__form-modal:hover,
+.registration__form-button:hover {
+        background: #a6f53e;
+        background-size: 100%;
+        opacity: 0.4;
+}
+
+
+.registration__form-modal {
+        margin-top: 20px;
+        width: 360px;
+        height: 45px;
+        @include font(300, 13px, 16px);
+        color: #B1B1B1;
+
+        @include media(320px, 767px) {
+                margin-left: 8px;
+                width: 95%;
+        }
+}
+
+.registration__form-button {
+        margin-top: 39px;
+        @include flex-center;
+        width: 167px;
+        height: 50px;
+        background-color: $textred;
+        text-transform: uppercase;
+        @include font(normal, 14px, 17px);
+        color: $white;
+}
+
+.registration__form-radio {
+        margin-top: 31px;
+        display: flex;
+        text-align: center;
+        @include font(300, 11px, 13px);
+
+        &-text {
+                margin-left: 10px;
+                margin-right: 20px;
+                @include flex-center;
+        }
+
+}
+
+.registration__form-modal:active,
+.registration__form-button:active {
+        background: #F16D7F;
+        background-size: 100%;
+        opacity: 0.9;
+}
+
+.registration__hid {
+        display: none;
+}

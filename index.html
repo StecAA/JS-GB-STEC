@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrp">
+                <div class="header__wrp-logo">
+                    <a class="header__logo" href="#"><img src="./image/header1.svg" alt="logo"></a>
+                    <a class="header__search" href="#"><img src="./image/header2.svg" alt="search"></a>
+                </div>
+                <div class="header__list-basket">
+                    <button class="header__list" id="burger"> <img src="./image/header3.svg" alt="list"></button>
+                    <a class="header__mypage" href="./registration.html" target="_blank">
+                        <img src="./image/header4.svg" alt="mypage"></a>
+                            <span class="header__basket cartIconWrap">
+                                <img class="cartIcon" src="./image/cart.png" alt="basket">
+                                <span>0</span>
+                            </span>
+                             <div class="basket hidden">
+                                <div class="basketRow basketHeader">
+                                    <div>Название товара</div>
+                                    <div>Количество</div>
+                                    <div>Цена за шт.</div>
+                                    <div>Итого</div>
+                                </div>
+                            
+                                <div class="basketTotal">
+                                    Товаров в корзине на сумму:
+                                    $<span class="basketTotalValue">0</span>
+                                </div>
+                            </div></a>
+                </div>
+            </div>
+        </div>
+       
+        <section class="page-index">
+            <img class="page-index__pic" src="./image/menindex.png" alt="men">
+            <div class="page-index__content">
+                <h1 class="page-index__text">the brand </h1>
+                <div class="page-index__wrp">
+                    <p class="page-index__wrp-text">of luxerious </p>
+                    <p class="page-index__wrp-text-red"> fashion</p>
+                </div>
+            </div>
+            <nav class="page-index__nav" id="menu">
+                <h2 class="page-index__nav-title">
+                    menu
+                </h2>
+                <ul class="menu-item">
+                    <li class="menu-item__item">
+                        <h3 class="menu-item__title">man</h3>
+                        <ul class="menu-item__list">
+                            <li class="menu-item__sab-item">
+                                accessories
+                            </li>
+                            <li class="menu-item__sab-item">
+                                bags
+                            </li>
+                            <li class="menu-item__sab-item">
+                                denim
+                            </li>
+                            <li class="menu-item__sab-item">
+                                t-shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item__item">
+                        <h3 class="menu-item__title">woman</h3>
+                        <ul class="menu-item__list">
+                            <li class="menu-item__sab-item">
+                                accessories
+                            </li>
+                            <li class="menu-item__sab-item">
+                                bags
+                            </li>
+                            <li class="menu-item__sab-item">
+                                denim
+                            </li>
+                            <li class="menu-item__sab-item">
+                                t-shirts
+                            </li>
+                            <li class="menu-item__sab-item">
+                                shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item__item">
+                        <h3 class="menu-item__title">kids</h3>
+                        <ul class="menu-item__list">
+                            <li class="menu-item__sab-item">
+                                accessories
+                            </li>
+                            <li class="menu-item__sab-item">
+                                bags
+                            </li>
+                            <li class="menu-item__sab-item">
+                                denim
+                            </li>
+                            <li class="menu-item__sab-item">
+                                t-shirts
+                            </li>
+                            <li class="menu-item__sab-item">
+                                shirts
+                            </li>
+                            <li class="menu-item__sab-item">
+                                bags
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="section-content-item">
+            <h2 class="section-content-item__hid">sales</h2>
+            <ul class="section-content-item__box">
+                <li class="section-content-item__women">
+                    <p class="section-content-item__text">30% off</p>
+                    <h3 class="section-content-item__text-red">for women</h3>
+                </li>
+                <li class="section-content-item__men">
+                    <p class="section-content-item__text">hot deal</p>
+                    <h3 class="section-content-item__text-red">for men</h3>
+                </li>
+                <li class="section-content-item__kids">
+                    <p class="section-content-item__text">new arrivals</p>
+                    <h3 class="section-content-item__text-red">for kids</h3>
+                </li>
+            </ul>
+            <div class="section-content-item__accessories">
+                <p class="section-content-item__text">luxirous & trendy</p>
+                <h3 class="section-content-item__text-red">accesories</h3>
+            </div>
+        </section>
+        <section class="section-intem">
+            <h2 class="section-intem__caption ">Fetured items</h2>
+            <p class="section-intem__sab-caption">Shop for items based on what we featured in this week</p>
+            <div class="section-intem-wrp featuredItems">
+                <ul class="list-intem">
+                    <li class="list-intem__tiny featuredItem" data-id="1" data-name="Куртка" data-price="52">
+                        <div class="list-intem__tiny-overlay">
+                            <img class="list-intem__tiny-img" src="./image/intem-1.png" alt="intem-1.png">
+                            <button class="list-intem__tiny-button addToCart"><img src="./image/vector.svg" alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem__tiny-paragraph">Куртка</h3>
+                        <p class="list-intem__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem__tiny-red">$52.00</p>
+                    </li>
+                    <li class="list-intem__tiny featuredItem" data-id="2" data-name="Валенки" data-price="53">
+                        <div class="list-intem__tiny-overlay">
+                            <img class="list-intem__tiny-img" src="./image/intem-2.png" alt="intem-2.png">
+                            <button class="list-intem__tiny-button addToCart"><img src="./image/vector.svg" alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem__tiny-paragraph">Валенки</h3>
+                        <p class="list-intem__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem__tiny-red">$53.00</p>
+                    </li>
+                    <li class="list-intem__tiny featuredItem" data-id="3" data-name="Шапка" data-price="11">
+                        <div class="list-intem__tiny-overlay">
+                            <img class="list-intem__tiny-img" src="./image/intem-3.png" alt="intem-3.png">
+                            <button class="list-intem__tiny-button addToCart"><img src="./image/vector.svg" alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem__tiny-paragraph">шапка</h3>
+                        <p class="list-intem__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem__tiny-red">$11.00</p>
+                    </li>
+                </ul>
+                <ul class="list-intem-second" >
+                    <li class="list-intem-second__tiny featuredItem" data-id="4" data-name="Шлёпки" data-price="78">
+                        <div class="list-intem-second__tiny-overlay">
+                            <img class="list-intem-second-img" src="./image/intem-4.png" alt="intem-4.png">
+                            <button class="list-intem-second__tiny-button addToCart"><img src="./image/vector.svg"
+                                    alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem-second__tiny-paragraph">Шлёпки</h3>
+                        <p class="list-intem-second__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem-second__tiny-red">$78.00</p>
+                    </li>
+                    <li class="list-intem-second__tiny featuredItem" data-id="5" data-name="Пиджак" data-price="52">
+                        <div class="list-intem-second__tiny-overlay">
+                            <img class="list-intem-second-img" src="./image/intem-5.png" alt="intem-5.png">
+                            <button class="list-intem-second__tiny-button addToCart"><img src="./image/vector.svg"
+                                    alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem-second__tiny-paragraph">Пиджак</h3>
+                        <p class="list-intem-second__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem-second__tiny-red">$52.00</p>
+                    </li>
+                    <li class="list-intem-second__tiny featuredItem" data-id="6" data-name="Футболка" data-price="66">
+                        <div class="list-intem-second__tiny-overlay">
+                            <img class="list-intem-second-img" src="./image/intem-6.png" alt="intem-6.png">
+                            <button class="list-intem-second__tiny-button addToCart"><img src="./image/vector.svg"
+                                    alt="basket">Add to
+                                Cart</button>
+                        </div>
+                        <h3 class="list-intem-second__tiny-paragraph">Футболка</h3>
+                        <p class="list-intem-second__tiny-grey">known for her sculptural takes on traditional tailoring,
+                            australian arbiter of cool kym ellery teams up with moda operandi.</p>
+                        <p class="list-intem-second__tiny-red">$66.00</p>
+                    </li>
+                </ul>
+            </div>
+            <a class="button-red" href="#">
+                <h3 class="button-red__text">Browse All Product</h3>
+            </a>
+        </section>
+        <section class="advantages">
+            <ul class="advantages__list">
+                <li class="advantages__box">
+                    <a href="#">
+                        <img src="./image/icon1.svg" alt="delivery">
+                    </a>
+                    <h3 class="advantages__box-white">Free Delivery</h3>
+                    <p class="advantages__list-box">worldwide delivery on all. authorit tively morph next-generation
+                        innov tion with extensive
+                        models.</p>
+                </li>
+                <li class="advantages__box">
+                    <a href="#">
+                        <img src="./image/icon2.svg" alt="discounts">
+                    </a>
+                    <h3 class="advantages__box-white">Sales & discounts</h3>
+                    <p class="advantages__list-box">worldwide delivery on all. authorit tively morph next-generation
+                        innov tion with extensive
+                        models.</p>
+                </li>
+                <li class="advantages__box">
+                    <a href="#">
+                        <img src="./image/icon3.svg" alt="assurance">
+                    </a>
+                    <h3 class="advantages__box-white">Quality assurance</h3>
+                    <p class="advantages__list-box">worldwide delivery on all. authorit tively morph next-generation
+                        innov tion with extensive
+                        models.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__content">
+            <div class="footer__content-title">
+                <img class="footer__content-img" src="./image/intersect.png" alt="face">
+                <p class="footer__content-img-text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a pulvinar
+                    purus
+                    condimentum“</p>
+            </div>
+            <div class="footer__content-form">
+                <h2 class="footer__content-slogan">subscribe </h2>
+                <p class="footer__content-text">for our newletter and promotion</p>
+                <div class="footer__content-button">
+                    <input class="footer__email" type="email" value="Enter Your Email">
+                    <input class="footer__button" type="submit" value="Subscribe">
+                </div>
+            </div>
+        </section>
+        <section class="footer__link">
+            <p class="footer__link-text">© 2021 brand all rights reserved.</p>
+            <h2 class="footer__link-hid">footer</h2>
+            <ul class="footer__holder">
+                <li><a class="footer__holder-facebook" href="#">
+                        <img src="./image/footer1.svg" alt="facebook">
+                    </a></li>
+                <li><a class="footer__holder-instagram" href="#">
+                        <img src="./image/footer2.svg" alt="instagram">
+                    </a></li>
+                <li><a class="footer__holder-p" href="#">
+                        <img src="./image/footer3.svg" alt="p">
+                    </a></li>
+                <li><a class="footer__holder-twiter" href="#">
+                        <img src="./image/footer4.svg" alt="twiter">
+                    </a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/basket.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.page-index {
+        display: flex;
+        background-color: $bgpinc;
+        height: 764px;
+
+        @include media(768px, 1023px) {
+                height: 367px;
+        }
+
+        @include media(320px, 767px) {
+                height: 367px;
+                width: 100%;
+        }
+}
+
+.page-index__nav {
+        width: 15%;
+        background: $white;
+        margin-left: auto;
+}
+
+.page-index__text {
+        @include font(900, 48px, 58px);
+        text-transform: uppercase;
+
+        @include media(768px, 1023px) {
+                @include font(900, 44px, 52px);
+        }
+
+        @include media(320px, 767px) {
+                @include font(700, 38px, 45px);
+        }
+}
+
+.page-index__wrp {
+        display: flex;
+}
+
+.page-index__wrp-text {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 44px;
+        color: $black;
+        text-transform: uppercase;
+
+        @include media(768px, 1023px) {
+                @include font(700, 24px, 28px);
+        }
+
+        @include media(320px, 767px) {
+                @include font(700, 20px, 24px);
+        }
+}
+
+.page-index__content {
+        margin-top: 25%;
+        position: absolute;
+        left: 54%;
+
+        @include media(768px, 1023px) {
+                margin-top: 17%;
+                left: 45%;
+        }
+
+        @include media(320px, 767px) {
+                margin-top: 40%;
+                left: 15%;
+        }
+}
+
+.page-index__wrp-text-red {
+        margin-left: 28px;
+        @include font(900, 28px, 44px);
+        text-transform: uppercase;
+        color: $textred;
+
+        @include media(768px, 1023px) {
+                @include font(700, 24px, 28px);
+                color: $textred;
+                margin-left: 14px;
+        }
+
+        @include media(320px, 767px) {
+                @include font(700, 20px, 24px);
+                color: $textred;
+                margin-left: 14px;
+        }
+}
+
+.page-index__pic {
+        width: 63%;
+
+        @include media(1024px, 2000px) {
+                width: 800px;
+                height: 764px;
+        }
+
+        @include media(768px, 1023px) {
+                width: 40%;
+        }
+
+        @include media(320px, 767px) {
+                display: none;
+        }
+
+}
+
+.page-index__nav-title {
+        @include font(bold, 14px, 17px);
+        text-transform: uppercase;
+        margin-top: 37px;
+        margin-left: 34px;
+}
+
+
+
+.page-index__content::before {
+        width: 12px;
+        height: 92px;
+        background-color: $textred;
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 10px;
+
+        @include media(768px, 1023px) {
+                left: -16px;
+        }
+
+        @include media(320px, 767px) {
+                height: 61px;
+                left: -15px;
+        }
+}
+
+.page-index__nav {
+        display: none;
+}
+
+.page-index-show {
+        display: block;
+}

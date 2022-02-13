@@ -1,0 +1,26 @@
+@mixin flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+@mixin font ($weight, $size, $height) {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: $weight;
+        font-size: $size;
+        line-height: $height;
+        color: $black;
+}
+
+@mixin media($min-width, $max-width) {
+        @media (min-width: $min-width)and(max-width: $max-width) {
+                @content;
+        }
+}
+
+@mixin hover {
+        background: #a6f53e;
+        background-size: 100%;
+        opacity: 0.4;
+}
